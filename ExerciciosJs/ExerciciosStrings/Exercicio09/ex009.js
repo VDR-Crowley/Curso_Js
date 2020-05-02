@@ -5,13 +5,14 @@ se passar, imprimir a frase na vertical com um tempo em cada letra.
 */
 var frase = window.prompt("Escreva uma frase");
 var repeti;
+var vert;
 while(frase != true){
     if(frase.length > 40){
         window.alert(`Frase inválida possui ${frase.length} caracter`);
         var frase = window.prompt("Escreva uma frase");
         repeti=+1;
     }else{
-            window.setInterval(document.writeln(frase), 1000);
-            frase=+1;
+        document.writeln(frase);
+    frase=+1;
     }
 };

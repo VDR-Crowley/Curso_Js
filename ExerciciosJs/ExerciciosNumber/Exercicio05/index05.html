@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="main05.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>exercicio05...</title>
+        <style>
+            html{
+                background-color: black;
+            }
+            body{
+                font: normal 20px Arial;
+                background-color:cadetblue;
+                width: 600px;
+                margin-right: 300px;
+                margin-left: 450px;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            h1{
+                color: blue;
+                margin-top: 50px;
+                text-shadow: 3px 3px 1px black;
+            }
+
+            input{
+                font: normal 20px Arial;
+                width: 300px;
+                margin-left: 40px;
+                margin-right: 40px;
+                text-align: center;
+            }
+            div#res{
+                background-color: cadetblue;
+                margin-top: 20px;
+                text-align: center;
+            }
+            value{
+                background-color: cadetblue;
+            }
+            div#area{
+                background-color: blue;
+                padding-top: 30px;
+                width: 500px;
+                margin-left: 60px;
+                height: 500px;
+                line-height: 60px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Digite 5 números</h1>
+        <div id="area">
+            <input type="number" name="txtn1" id="txtn1">
+            <input type="number" name="txtn2" id="txtn2">
+            <input type="number" name="txtn3" id="txtn3">
+            <input type="number" name="txtn4" id="txtn4">
+            <input type="number" name="txtn5" id="txtn5">
+            <input type="button" value="proximo" onclick="maior()">
+            <div id="res">Resultado</div>
+        </div>
+        <script>
+            /*
+            5) - Peça ao usuário para digitar 5 números em uma caixa de texto.
+                Verifique qual é o maior número e exiba-o.
+            */
+            function maior(){
+                var tn1 = window.document.getElementById('txtn1');
+                var tn2 = window.document.getElementById('txtn2');
+                var tn3 = window.document.getElementById('txtn3');
+                var tn4 = window.document.getElementById('txtn4');
+                var tn5 = window.document.getElementById('txtn5');
+                var n1 = Number(tn1.value);
+                var n2 = Number(tn2.value);
+                var n3 = Number(tn3.value);
+                var n4 = Number(tn4.value);
+                var n5 = Number(tn5.value);
+                if(n1>n2 && n1>n3 && n1>n3 && n1>n4 && n1>n5){
+                    res.innerHTML = `O primero número: ${n1} é o maior  número`;
+                }else if(n2>n3 && n2>n4 && n2>n5 && n2>n1){
+                    res.innerHTML = `O segundo o número: ${n2} é o maior`;
+                }else if(n3>n4 && n3>n5 && n3>n2 && n3>n1){
+                    res.innerHTML = `O terceiro número: ${n3} é o maior número`;
+                }else if(n4>n5 && n4>n3 && n4>n2 && n4>n1){
+                    res.innerHTML = `O quarto número: ${n4} é o maior número`;
+                }else{
+                    res.innerHTML = `O quinto número: ${n5} é o maior número`;
+                }
+            }
+
+        </script>
+    </body>
+</html>

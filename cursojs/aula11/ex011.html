@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade...</title>
+</head>
+<body>
+    <h1>Qual a sua Nacionalidade</h1>
+    <p>
+        Qual seu pais de origem: <input type="text" id="txtP">
+        <input type="button" value="verificar" onclick="origem()">
+    </p>
+    <div id="res1">
+        Resposta
+    </div>
+    <p>
+        Qual é o pais em que você reside: <input type="text" id="txtR">
+        <input type="button" value="verificar" onclick="residente()">
+    </p>
+    <div id="res">
+        Resposta
+    </div>
+
+    <script>
+        function origem(){
+            var txtpais = window.document.getElementById('txtP');
+            var txtres1 = window.document.getElementById('res1');
+            var pais = (txtpais.value);
+            if(pais == 'Brasil'){
+                res1.innerHTML = 'Você é Brasileiro';
+            }else{
+                res1.innerHTML = 'Você é gringo';
+            }
+        }
+        function residente(){
+            var txtresi = window.document.getElementById('txtR');
+            var txtres = window.document.getElementById('res');
+            var reside = (txtresi.value);
+            if(reside == 'Brasil'){
+                res.innerHTML = `<p>Você mora em seu pais de origem.</p>`;
+            }else{
+                res.innerHTML = '<p>Você é estrageiro</p>';
+            }
+        }
+    </script>
+</body>
+</html>

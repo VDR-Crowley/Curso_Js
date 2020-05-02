@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascrpt" src="main06.js"></script>
+    <title>exercicio06...</title>
+</head>
+<body>
+    <h1>Indentificador de idade</h1>
+    <input type="number" id="txtidade1">
+    <input type="button" value="proximo" onclick="proximo()">
+    <div id="res">resultado</div>
+    <script>
+        /*
+            6) - Peça ao usuário para digitar várias idades.Exiba quantas pessoas
+            são maior de idade (18 anos) e quantas são menores.
+         */
+        function proximo(){
+            var idade = window.document.getElementById('txtidade1').value;
+            idade = idade.split(",");
+            var maior = 0;
+            var menor = 0;
+            for(i=0;i<idade.length;i++){
+                if(parseInt(idade[i]) >= 18){
+                    maior++;
+                }else
+                    menor++;
+            }
+            document.write(`Maiores: ${maior}  Menores: ${menor}`);
+        }
+    </script>
+</body>
+</html>
