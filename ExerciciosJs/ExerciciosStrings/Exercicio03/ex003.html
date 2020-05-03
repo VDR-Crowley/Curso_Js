@@ -1,11 +1,97 @@
-<!DOCTYPE htmil>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
     <head>
-        <title>Exercicio03...</title>
         <meta charset="utf-8">
-        <script type="text/javascript" src="ex003.js"></script>
+        <title>Exercicio03...</title>
+        <style>
+            body{
+                background-color:maroon;
+                font: normal 15pt Arial;
+            }
+
+            header{
+                font: 20pt arial;
+                background: grey;
+                border-radius: 15px;
+                color:crimson;
+                width: 600px;
+                margin: auto;
+                text-align: center;
+                text-shadow: 3px 3px 2px black;
+                box-shadow: 3px 3px 2px black;
+            }
+            p{
+                color: crimson;
+                text-shadow: 1px 1px 0px black;
+            }
+            section{
+                background: grey;
+                text-align: center;
+                border-radius: 15px;
+                padding: 15px;
+                width: 200pt;
+                margin: auto;
+                box-shadow: 3px 3px 2px black;
+            }
+            footer{
+                font-style: italic;
+                background: grey;
+                border-radius: 15px;
+                padding: 5px;
+                width: 300px;
+                color: crimson;
+                text-align: center;
+                margin: auto;
+                margin-top: 30px;
+                text-shadow: 1px 1px 1px black;
+                box-shadow: 3px 3px 2px black;
+            }
+        </style>
+        
     </head>
     <body>
+        <header>
+            <h2>Informação de dados simples</h2>
+        </header>
+
+        <section>
+            <div>
+                <p>
+                    Informe seu nome <input type="text" name="txtnome" id="txtnome">                   
+                </p>
+                <p>
+                    Informe seu endereço <input type="text" name="txte" id="txte">
+                </p>
+                <p>
+                    Informe seu telefone<input type="number" name="txtn" id="txtnum">
+                </p>
+                <input type="button" value="Verificar" onclick="verificando()">
+            </div>
+            <div id="res">
+                Resposta
+            </div>
+        </section>
         
+        <script>
+            /*
+            3) - Ler nome, endereço, telefone e imprimir 
+            */
+           function verificando(){
+               var name = window.document.getElementById('txtnome');
+               var endereco = window.document.getElementById('txte');
+               var telefone = window.document.getElementById('txtnum');
+               var res = window.document.getElementById('res');
+               var nome = txtnome.value;
+               var ende = txte.value;
+               var tel = Number(txtnum.value);
+               res.innerHTML = `Nome: ${nome}`;
+               res.innerHMTL = `Endereço: ${endereco}`;
+               res.innerHTML = `Telefone: ${tel}`;
+
+           }
+        </script>
+        <footer>
+            @ExercicioString03
+        </footer>
     </body>
 </html>

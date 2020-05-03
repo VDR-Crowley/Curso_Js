@@ -1,12 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="ex001.js"></script>
-    <title>Document</title>
+    <title>Exercicio01...</title>
+    <style>
+        body{
+            font: normal 15pt Arial;
+            background: blue;
+        }
+        header{
+            color: gold;
+            text-align: center;
+            text-shadow: 3px 3px 1px black;
+        }
+        p{
+            color: gold;
+            text-shadow: 2px 2px 1px black
+        }
+        input{
+             background-color: blanchedalmond;
+        }
+        div#res{
+            color: gold;
+            text-shadow: 
+            
+            2px 1px black ;
+        }
+        section{
+            background: cornflowerblue;
+            text-align: center; 
+            border-radius: 15px;   
+            padding: 15px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 4px 4px 3px black;
+        }
+        footer{
+            margin-top: 30px;
+            color:gold;
+            text-align: center;
+            text-shadow: 2px 2px 1px black;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body> 
-    <!--Exercicio feito no main.js-->
+    <header>
+        <h2>As 4 primeiras letras do seu nome</h2>
+    </header>
+
+    <section>
+        <div>
+            <p>
+                Digite um nome
+                <input type="text" name="txtn" id="txtn">
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            <p>resposta</p>
+        </div>
+    </section>
+    <script>
+    /*
+        1-) Receber um nome e imprimir as 4 primeiras letrass do nome.
+        Para Fazer esse exercicio foi usado a função .substring();
+        Ela pode ser definida com duas posições
+        a primeira representa o inicio e a segunda o final.
+        */
+       function verificar(){
+           var name = window.document.getElementById('txtn');
+           var res = window.document.getElementById('res');
+           var nome = txtn.value;
+           res.innerHTML = `${nome.substring(0,4)}`;
+       }
+        /*
+        var nome = window.prompt('qual o seu nome:');
+        window.alert(nome.substring(0, 4));
+        document.write(nome.substring(0, 4));
+        */
+        /*
+        var nome = "JavaScript";
+        console.log(`Primeiro exercicio em ${nome.substring(0, 4)}`);
+    */
+    </script>
+    <footer>@ExercicioString</footer>
 </body>
 </html>
