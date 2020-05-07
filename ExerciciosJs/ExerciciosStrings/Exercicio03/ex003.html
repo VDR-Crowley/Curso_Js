@@ -24,12 +24,25 @@
                 color: crimson;
                 text-shadow: 1px 1px 0px black;
             }
+            div#resnome{
+                margin-top: 10px;
+                color: crimson;
+                text-shadow: 1px 1px 0px black;
+            }
+            div#resende{
+                color: crimson;
+                text-shadow: 1px 1px 0px black;
+            }
+            div#restel{
+                color: crimson;
+                text-shadow: 1px 1px 0px black;
+            }
             section{
                 background: grey;
                 text-align: center;
                 border-radius: 15px;
                 padding: 15px;
-                width: 200pt;
+                width: 250pt;
                 margin: auto;
                 box-shadow: 3px 3px 2px black;
             }
@@ -67,9 +80,9 @@
                 </p>
                 <input type="button" value="Verificar" onclick="verificando()">
             </div>
-            <div id="res">
-                Resposta
-            </div>
+            <div id="resnome">Resposta</div>
+            <div id="resende"></div>
+            <div id="restel"></div>
         </section>
         
         <script>
@@ -77,17 +90,20 @@
             3) - Ler nome, endereço, telefone e imprimir 
             */
            function verificando(){
+               // div das caixas de texto
                var name = window.document.getElementById('txtnome');
                var endereco = window.document.getElementById('txte');
                var telefone = window.document.getElementById('txtnum');
-               var res = window.document.getElementById('res');
+               // recebe as div de resposta
+               var res = window.document.getElementById('resnome');
+               var res1 = window.document.getElementById('resende');
+               var res2 = window.document.getElementById('restel');
                var nome = txtnome.value;
+               res.innerText = `Nome: ${nome}`;
                var ende = txte.value;
+               res1.innerText = `Endereço: ${ende}`;
                var tel = Number(txtnum.value);
-               res.innerHTML = `Nome: ${nome}`;
-               res.innerHMTL = `Endereço: ${endereco}`;
-               res.innerHTML = `Telefone: ${tel}`;
-
+               res2.innerHTML = `Telefone: ${tel}`;
            }
         </script>
         <footer>

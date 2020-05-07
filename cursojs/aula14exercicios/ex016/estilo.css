@@ -1,0 +1,31 @@
+body{
+    background: slategray;
+    font: normal 15pt Arial;
+}
+header{
+    color: cornsilk;
+    text-align: center;
+    font: normal 20pt Arial;
+    text-shadow: 3px 3px 1px black;
+}
+section{
+    background: cornsilk;
+    border-radius: 15px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 7px black;
+}
+input{
+    box-shadow: 4px 4px 5px black;
+}
+div#res{
+    color: goldenrod;
+    text-shadow: 2px 2px 2px black;   
+}
+footer{
+    color: cornsilk;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 2px 2px 1px black;
+}

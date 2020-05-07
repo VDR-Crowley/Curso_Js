@@ -1,0 +1,38 @@
+body{
+    background: violet;
+    font: normal 15pt Arial;
+}
+header{
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+}
+section{
+    background:  rebeccapurple;
+    border-radius: 15px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+}
+input{
+    color: white;
+    background-color: black;
+    box-shadow: 3px 3px 3px black;
+}
+p{
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+select{
+    color: white;
+    background-color: black;
+    text-shadow: 1px 1px 1px violet;
+    box-shadow: 3px 3px 4px black;
+}
+footer{
+    font: 15px;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 3px 3px 3px black;
+}

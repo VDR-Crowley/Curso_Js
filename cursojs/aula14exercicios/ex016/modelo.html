@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simulador de contagem</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <header>
+            <h3>Vamos contar</h3>
+        </header>
+        <section>
+            <div>
+                <p>
+                    Inicio: 
+                    <input type="number" id="ini">
+                </p>
+                <p>
+                    Fim:
+                    <input type="number" id="fim">
+                </p>
+                <p>
+                    Passo: 
+                    <input type="number" id="quant">
+                </p>
+                <p>
+                    <input type="button" value="contar" onclick="Contando()">
+                </p>
+            </div>
+            <div id="res">
+                <p>Contagem</p>
+            </div>
+        </section>
+        <footer>
+           <p>&copy; ExSimuladorDeContagem</p> 
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,12 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="ex007.js"></script>
     <title>Exercicio007...</title>
+    <style>
+
+    </style>
+    
 </head>
 <body>
-    
+    <header>
+        <h2>Digite um nome com a letra A</h2>
+    </header>
+    <section>
+        <div>
+            <p>digite um nome
+            <input type="text" id="txtn">
+            <input type="button" value="Verificar" onclick="verificando()">
+            </p>
+        </div>
+        <div id="res">Resposta</div>
+    </section>
+    <script>
+        function verificando(){
+                 /*
+                7) - Entrar com um nome e imprimir o nome somente se a primeira letra for "a"
+                (maiuscula ou miniscula).
+                não termiando.
+                */
+            var res = window.document.getElementById('res');
+            var name = window.document.querySelectorAll('div#txtn');
+            var nome = txtn.value;
+                if(nome.substring(0 == 'a') || nome.substring(0 == 'A')){
+                    res.innerText = `${nome}`;
+                }else{
+                    alert('Seu nome nao tem a letra a')
+                }
+        }
+                //var nome = window.prompt("Digites um nome");
+                //if(nome.substring(0 == 'a') || nome.substring(0 == 'A')){
+                //  window.alert(nome);
+                //}else{
+                //  window.alert("????");
+                //}
+    </script>
 </body>
 </html>
