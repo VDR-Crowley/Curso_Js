@@ -2,7 +2,7 @@
 var cont = 0;
 var numero = 5;
 var resultado
-while(cont <= 10){       TABUADA
+while(cont <= 10){       //TABUADA
     resultado = numero*cont;
     console.log(numero+'X'+cont+'='+resultado);
     cont++;

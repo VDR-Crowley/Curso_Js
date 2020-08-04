@@ -1,8 +1,8 @@
 /*
 var count;
-var frase = "O marcos é burro";
-var frase2 = "Ele é pedofilo";
-var frase3 = "Ele inludi criaças"; 
+var frase = "Minha professora é chata";
+var frase2 = "Minha Mão faz comida boa";
+var frase3 = "Não gosto de crianças"; 
 var d = new Date();
 for(count = 1; count <= 5; count++){
     alert(count);

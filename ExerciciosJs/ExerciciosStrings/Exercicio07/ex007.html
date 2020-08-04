@@ -17,27 +17,27 @@
         <div>
             <p>digite um nome
             <input type="text" id="txtn">
-            <input type="button" value="Verificar" onclick="verificando()">
+            <input type="button" value="Verificar" onclick="Verificando()">
             </p>
         </div>
         <div id="res">Resposta</div>
     </section>
     <script>
-        function verificando(){
+        function Verificando(){
                  /*
                 7) - Entrar com um nome e imprimir o nome somente se a primeira letra for "a"
                 (maiuscula ou miniscula).
                 não termiando.
                 */
-            var res = window.document.getElementById('res');
-            var name = window.document.querySelectorAll('div#txtn');
-            var nome = txtn.value;
+                var name = window.document.querySelectorAll('div#txtn');
+                var res = window.document.getElementById('res');
+                var nome = txtn.value;
                 if(nome.substring(0 == 'a') || nome.substring(0 == 'A')){
-                    res.innerText = `${nome}`;
+                    res.innerHTML = `Nome: ${nome}`;
                 }else{
                     alert('Seu nome nao tem a letra a')
                 }
-        }
+                }
                 //var nome = window.prompt("Digites um nome");
                 //if(nome.substring(0 == 'a') || nome.substring(0 == 'A')){
                 //  window.alert(nome);
