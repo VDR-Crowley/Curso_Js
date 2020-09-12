@@ -32,10 +32,10 @@
                 var name = window.document.querySelectorAll('div#txtn');
                 var res = window.document.getElementById('res');
                 var nome = txtn.value;
-                if(nome.substring(0 == 'a') || nome.substring(0 == 'A')){
+                if(nome.charAt(0) == 'a' || nome.charAt(0) == 'A'){
                     res.innerHTML = `Nome: ${nome}`;
                 }else{
-                    alert('Seu nome nao tem a letra a')
+                    alert('A primeira letra do seu nome não começa com a letra \"a\" ou \"A\" ')
                 }
                 }
                 //var nome = window.prompt("Digites um nome");
